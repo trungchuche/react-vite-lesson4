@@ -8,6 +8,8 @@ import MyLock from './component/MyLock.jsx'
 import Car from './component/Car.jsx'
 import TodoApp from './component/todolist/TodoApp.jsx'
 import TodoAppJob from './component/todoJob/TodoAppJob.jsx'
+import CountdownDemo from './component/CountdownDemo.jsx'
+import ClickCounterDemo from './component/ClickCounterDemo.jsx'
 function App() {
   const [view, setView] = useState("home")
 
@@ -25,6 +27,10 @@ function App() {
         return <TodoApp />
       case "TodoAppJob":
         return <TodoAppJob />
+      case "CountdownDemo":
+        return <CountdownDemo />
+      case "ClickCounterDemo":
+        return <ClickCounterDemo />
       default:
         return null
     }
@@ -39,6 +45,8 @@ function App() {
         <button onClick={() => setView('Car')}>Car</button>
         <button onClick={() => setView('ToDoApp')}>ToDoApp</button>
         <button onClick={() => setView('TodoAppJob')}>TodoAppJob</button>
+        <button onClick={() => setView('CountdownDemo')}>CountdownDemo</button>
+        <button onClick={() => setView('ClickCounterDemo')}>ClickCounterDemo</button>
       </nav>
       <main>
         {renderView()}
