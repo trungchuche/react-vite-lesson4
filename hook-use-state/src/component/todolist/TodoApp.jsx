@@ -6,7 +6,6 @@ import EditStudentModal from "./EditStudentModal";
 import React, { Component } from "react"
 import "./css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-// KHÔNG import bootstrap.bundle.min.js ở đây, hãy thêm vào index.html
 
 export default class TodoApp extends Component {
     constructor(props) {
