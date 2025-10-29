@@ -11,7 +11,6 @@ export default function useCarColor() {
         setSelected(e.target.value);
     };
 
-    // useEffect de lang nghe khi selected thay doi
     useEffect(() => {
         switch (selected) {
             case "0":

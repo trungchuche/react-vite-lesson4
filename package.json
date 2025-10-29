@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "yup": "^1.7.1"
   }
 }
